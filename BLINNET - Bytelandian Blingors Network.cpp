@@ -44,27 +44,6 @@ int main()
             // cout<<vertex<<','<<cost<<'\n';
             for(i=0;i<v[vertex].size();i++) pq.push({v[vertex][i].first,v[vertex][i].second});
         }
-        // visited[0]=true;
-        // st.insert(0);
-        // while(st.size()!=n) {
-        //     int dist = INT_MAX, pos;
-        // for(it=st.begin(); it!=st.end(); it++)
-        // {
-        //     int vertex = *it; 
-        //     cout<<vertex;
-        //     for(j=0;j<v[vertex].size();j++)
-        //     {
-        //         if(v[vertex][j].second < dist) { dist=v[vertex][j].second; pos=v[vertex][j].first; }
-        //         // cout<<v[vertex][j].first;
-        //     }
-        //     // cout<<"pos: "<<pos;
-        //     if(st.find(pos)!=st.end())  dist = INT_MAX;
-        // }
-        // cout<<pos;
-        // // break;
-        // ans += dist;
-        // st.insert(pos);
-        // }
         cout<<ans<<'\n';
     }
 }
