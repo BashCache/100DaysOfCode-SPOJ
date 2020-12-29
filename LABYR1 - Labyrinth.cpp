@@ -9,25 +9,18 @@ void dfs(int count, int &ans, int x, int y, bool visited[1005][1005])
     if(count>=ans) { ans= count; mnx=x; mny=y;}
     if(x-1>=0&&!visited[x-1][y]&&s[x-1][y]=='.') 
     {
-        // count++;
         dfs(count,ans,x-1,y,visited);
     }
     if(x+1<r&&!visited[x+1][y]&&s[x+1][y]=='.') 
     {
-        // count++;
-        // if(ans<count) { ans= count; mnx=x; mny=y;}
         dfs(count,ans,x+1,y,visited);
     }
     if(y-1>=0&&!visited[x][y-1]&&s[x][y-1]=='.') 
     {
-        // count++;
-        // if(ans<count) { ans= count; mnx=x; mny=y;}
         dfs(count,ans,x,y-1,visited);
     }
     if(y+1<c&&!visited[x][y+1]&&s[x][y+1]=='.') 
     {
-        // count++;
-        // if(ans<count) { ans= count; mnx=x; mny=y;}
         dfs(count,ans,x,y+1,visited);
     }
 }
@@ -52,7 +45,5 @@ int main()
         dfs(0,ans,mnx,mny,visited);
         
         cout<<"Maximum rope length is "<<ans-1<<".\n";
-        // if(ans==0)  cout<<ans<<".\n";
-        // else cout<<ans-1<<".\n";
     }
 }
